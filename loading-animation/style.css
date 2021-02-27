@@ -1,0 +1,35 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading__text{
+  font-family: 'Newsreader';
+  font-size: 2em;
+  line-height: 2;
+  text-align:center;
+  color: lightsalmon;
+  text-shadow: 1px 1px gray;
+  display: block;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(1turn);
+  }
+}
+.loading__anim{
+  border-radius: 50%;
+  margin: auto;
+  border: 5px solid grey;
+  border-left-color: #69c;
+  border-top-color: #69c;
+  width: 40px;
+  height: 40px;
+  display: block;
+  animation-name: rotate;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+}
